@@ -121,8 +121,8 @@
         forward_5: 'forward_5',
         forward_10: 'forward_10',
         forward_30: 'forward_30',
-        comment: 'comment',
-        comments_disabled: 'comments_disabled',
+        comment: 'notes',
+        comments_disabled: 'short_text',
         switch_on: 'toggle_on',
         switch_off: 'toggle_off',
         setting: 'tune',
@@ -234,7 +234,7 @@
     // emby ui class
     const embyLabelClass = 'inputLabel';
     const embyInputClass = 'emby-input emby-input-smaller';
-    const embyIconButtonClass = 'osdIconButton hide paper-icon-button-light';
+    const embyIconButtonClass = 'osdIconButton paper-icon-button-light';
     const embySelectWrapperClass = 'emby-select-wrapper emby-select-wrapper-smaller';
     const embyCheckboxListClass = 'featureList'; // 'checkboxList'
     const embyFieldDescClass = 'fieldDescription';
@@ -692,6 +692,7 @@
                 const danmakuCtrEle = document.getElementById(eleIds.danmakuCtr);
                 if (danmakuCtrEle && danmakuCtrEle.style.opacity !== '1') {
                     danmakuCtrEle.style.opacity = '1';
+                    danmakuCtrEle.class = 'flex align-items-center flex-direction-row videoOsd-maintransportbuttons videoOsd-hideWhenLocked videoOsd-centerButtons-autolayout';
                 }
             })
             .catch((err) => {

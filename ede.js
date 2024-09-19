@@ -234,7 +234,7 @@
     // emby ui class
     const embyLabelClass = 'inputLabel';
     const embyInputClass = 'emby-input emby-input-smaller';
-    const embyIconButtonClass = 'md-icon md-icon-fill osdIconButton-icon';
+    const embyIconButtonClass = 'osdIconButton';
     const embySelectWrapperClass = 'emby-select-wrapper emby-select-wrapper-smaller';
     const embyCheckboxListClass = 'featureList'; // 'checkboxList'
     const embyFieldDescClass = 'fieldDescription';
@@ -1585,7 +1585,7 @@
         if (props.iconKey) {
             button.setAttribute('title', props.label);
             button.setAttribute('aria-label', props.label);
-            button.innerHTML = `<i class="md-icon autortl" style="pointer-events: none;">${props.iconKey}</i>`;
+            button.innerHTML = `<i class="md-icon md-icon-fill osdIconButton-icon">${props.iconKey}</i>`;
             button.className = embyIconButtonClass;
         } else {
             button.className = 'btnOption raised emby-button';

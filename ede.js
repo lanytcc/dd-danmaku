@@ -234,7 +234,7 @@
     // emby ui class
     const embyLabelClass = 'inputLabel';
     const embyInputClass = 'emby-input emby-input-smaller';
-    const embyIconButtonClass = 'osdIconButton';
+    const embyIconButtonClass = 'osdIconButton hide paper-icon-button-light';
     const embySelectWrapperClass = 'emby-select-wrapper emby-select-wrapper-smaller';
     const embyCheckboxListClass = 'featureList'; // 'checkboxList'
     const embyFieldDescClass = 'fieldDescription';

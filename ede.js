@@ -174,6 +174,7 @@
     };
     const danmakuEngineOpts = [
         { id: 'canvas', name: 'canvas' },
+        { id: 'pixi', name: 'pixi' },
         { id: 'dom', name: 'dom' },
     ];
     const danmakuChConverOpts = [
